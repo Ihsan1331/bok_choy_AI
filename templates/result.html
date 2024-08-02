@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Result</title>
+</head>
+<body>
+    <h1>Detection Result</h1>
+    <p>The bok choy is classified as: {{ result }}</p>
+    <img src="{{ url_for('static', filename=filename) }}" alt="Uploaded Image">
+    <a href="{{ url_for('index') }}">Upload another image</a>
+</body>
+</html>
